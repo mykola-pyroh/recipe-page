@@ -2,7 +2,31 @@
 
 * {
     box-sizing: border-box;
+    background-color: variables.$stone150;
     font-size: 16px;
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-page-container {
+    background-color: variables.$white;
+    padding: 40px;
+    max-height: 1720px;
+    max-width: 740px;
+    &__recipe-img {
+        width: 100%;
+    }
+    &__resipe-title {}
+    &__resipe-summary {}
+}
+
+.section-container {
+    background-color: variables.$rose50;
 }

@@ -1,8 +1,29 @@
 * {
   box-sizing: border-box;
+  background-color: hsl(30, 18%, 87%);
   font-size: 16px;
   margin: 0;
   padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-page-container {
+  background-color: hsl(0, 0%, 100%);
+  padding: 40px;
+  max-height: 1720px;
+  max-width: 740px;
+}
+.recipe-page-container__recipe-img {
+  width: 100%;
+}
+.section-container {
+  background-color: hsl(330, 100%, 98%);
 }
 
 /*# sourceMappingURL=styles.css.map */
