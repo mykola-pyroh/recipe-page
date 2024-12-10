@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  background-color: hsl(30, 18%, 87%);
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -11,19 +10,71 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: hsl(30, 18%, 87%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+  width: 100%;
 }
 
 .recipe-page-container {
   background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
   padding: 40px;
-  max-height: 1720px;
   max-width: 740px;
 }
 .recipe-page-container__recipe-img {
+  border-radius: 10px;
+  margin: 0 0 40px;
   width: 100%;
 }
+.recipe-page-container__resipe-title {
+  font-size: 36px;
+  margin: 0 0 28px;
+}
+.recipe-page-container__resipe-summary {
+  margin: 28px 0 36px;
+}
+
 .section-container {
+  margin: 36px 0;
+}
+.section-container__preparation-time-container {
   background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  padding: 28px;
+}
+.section-container__list {
+  margin: 0 0 0 20px;
+}
+.section-container__nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.section-container__table-row {
+  border-bottom: 1px solid #ccc;
+}
+.section-container__table-row:last-child {
+  border-bottom: none;
+}
+.section-container__table-element {
+  padding: 18px 32px;
+}
+
+.preparation-time-container__preparetion-list {
+  margin: 0 0 0 20px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6svh;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
