@@ -8,8 +8,6 @@
     padding: 0;
 }
 
-
-
 body {
     display: flex;
     flex-direction: column;
@@ -59,7 +57,6 @@ main {
 }
 
 .preparetion-list {
-    gap: 8px;
     margin: 0 24px;
     &__item {
         @include typography(outfit-regular);
@@ -76,13 +73,11 @@ main {
     }
 }
 
-.section-container {
-    margin: 36px 0;
-    &__preparation-time-container {
-        
-    }
-    &__list {
-        margin: 0 0 0 20px;
+.section {
+    &__title {
+        @include typography(young-serif-regular);
+        color: $brown800;
+        margin: 0 0 24px;
     }
     &__nutrition-table {
         border-collapse: collapse;
@@ -99,13 +94,19 @@ main {
     }
 }
 
-.preparation-time-container {
-    &__title {
+.section-list {
+    margin: 0 0 0 18px;
+    &__item {
+        @include typography(outfit-regular);
+        color: $stone600;
+        &::marker{
+            color: $rose800;
+        }
+    }
+}
 
-    }
-    &__preparetion-list {
-        margin: 0 0 0 20px;
-    }
+hr {
+    margin: 32px 0;
 }
 
 footer {

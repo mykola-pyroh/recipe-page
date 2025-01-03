@@ -66,7 +66,6 @@ main {
 }
 
 .preparetion-list {
-  gap: 8px;
   margin: 0 24px;
 }
 .preparetion-list__item {
@@ -91,28 +90,46 @@ main {
   font-weight: bold;
 }
 
-.section-container {
-  margin: 36px 0;
+.section__title {
+  font-family: "Young Serif", serif;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: normal;
+  color: #854632;
+  margin: 0 0 24px;
 }
-.section-container__list {
-  margin: 0 0 0 20px;
-}
-.section-container__nutrition-table {
+.section__nutrition-table {
   border-collapse: collapse;
   width: 100%;
 }
-.section-container__table-row {
+.section__table-row {
   border-bottom: 1px solid #ccc;
 }
-.section-container__table-row:last-child {
+.section__table-row:last-child {
   border-bottom: none;
 }
-.section-container__table-element {
+.section__table-element {
   padding: 18px 32px;
 }
 
-.preparation-time-container__preparetion-list {
-  margin: 0 0 0 20px;
+.section-list {
+  margin: 0 0 0 18px;
+}
+.section-list__item {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: normal;
+  color: #5f574e;
+}
+.section-list__item::marker {
+  color: #7b284f;
+}
+
+hr {
+  margin: 32px 0;
 }
 
 footer {
