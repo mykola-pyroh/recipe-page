@@ -1,4 +1,5 @@
-@use "./variables";
+@import "./variables";
+@import "./mixins";
 
 * {
     box-sizing: border-box;
@@ -7,12 +8,14 @@
     padding: 0;
 }
 
+
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: variables.$stone150;
+    background-color: $stone150;
 }
 
 main {
@@ -20,39 +23,63 @@ main {
     align-items: center;
     justify-content: center;
     padding: 120px 0;
-    // height: 94svh;
     width: 100%;
 }
 
-.recipe-page-container {
-    background-color: variables.$white;
+.recipe-page {
+    background-color: $white;
     border-radius: 20px;
     padding: 40px;
-    // max-height: 1720px;
     max-width: 740px;
     &__recipe-img {
         border-radius: 10px;
         margin: 0 0 40px;
         width: 100%;
     }
-    &__resipe-title {
-        font-size: 36px;
-        margin: 0 0 28px;
+    &__recipe-title {
+        margin: 0 0 24px;
+        @include typography(young-serif-prime);
     }
-    &__resipe-summary {
-        margin: 28px 0 36px;
+    &__recipe-summary {
+        @include typography(outfit-regular);
+        color: $stone600;
+    }
+}
+
+.preparation-section {
+    background-color: $rose50;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 32px 0;
+    &__title {
+        @include typography(outfit-semibold);
+        color: $rose800;
+        margin: 0 0 16px;
+    }
+}
+
+.preparetion-list {
+    gap: 8px;
+    margin: 0 24px;
+    &__item {
+        @include typography(outfit-regular);
+        color: $stone600;
+        &::marker{
+            color: $rose800;
+        }
+        &:nth-child(2) {
+            margin: 8px 0;
+        }
+        span {
+            @include typography(outfit-bold);
+        }
     }
 }
 
 .section-container {
     margin: 36px 0;
     &__preparation-time-container {
-        background-color: variables.$rose50;
-        border-radius: 10px;
-        padding: 28px;
-    }
-    &__title {
-
+        
     }
     &__list {
         margin: 0 0 0 20px;

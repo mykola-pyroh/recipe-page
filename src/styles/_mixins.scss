@@ -1,0 +1,8 @@
+@mixin typography($preset-name) {
+    $preset: map-get($typography-presets, $preset-name);
+    font-family: unquote(inspect(map-get($preset, font-family)));
+    font-size: map-get($preset, font-size);
+    line-height: map-get($preset, line-height);
+    letter-spacing: map-get($preset, letter-spacing);
+    font-weight: map-get($preset, font-weight);
+}

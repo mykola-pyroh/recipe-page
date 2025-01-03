@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: hsl(30, 18%, 87%);
+  background-color: #e4ded8;
 }
 
 main {
@@ -21,32 +21,78 @@ main {
   width: 100%;
 }
 
-.recipe-page-container {
-  background-color: hsl(0, 0%, 100%);
+.recipe-page {
+  background-color: white;
   border-radius: 20px;
   padding: 40px;
   max-width: 740px;
 }
-.recipe-page-container__recipe-img {
+.recipe-page__recipe-img {
   border-radius: 10px;
   margin: 0 0 40px;
   width: 100%;
 }
-.recipe-page-container__resipe-title {
-  font-size: 36px;
-  margin: 0 0 28px;
+.recipe-page__recipe-title {
+  margin: 0 0 24px;
+  font-family: "Young Serif", serif;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: normal;
 }
-.recipe-page-container__resipe-summary {
-  margin: 28px 0 36px;
+.recipe-page__recipe-summary {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: normal;
+  color: #5f574e;
+}
+
+.preparation-section {
+  background-color: #fff5fa;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+}
+.preparation-section__title {
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  font-weight: 600;
+  color: #7b284f;
+  margin: 0 0 16px;
+}
+
+.preparetion-list {
+  gap: 8px;
+  margin: 0 24px;
+}
+.preparetion-list__item {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: normal;
+  color: #5f574e;
+}
+.preparetion-list__item::marker {
+  color: #7b284f;
+}
+.preparetion-list__item:nth-child(2) {
+  margin: 8px 0;
+}
+.preparetion-list__item span {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0px;
+  font-weight: bold;
 }
 
 .section-container {
   margin: 36px 0;
-}
-.section-container__preparation-time-container {
-  background-color: hsl(330, 100%, 98%);
-  border-radius: 10px;
-  padding: 28px;
 }
 .section-container__list {
   margin: 0 0 0 20px;
