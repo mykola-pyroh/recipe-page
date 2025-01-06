@@ -27,23 +27,23 @@ main {
 .recipe-page {
     background-color: $white;
     border-radius: 24px;
-    // padding: 40px;
     max-width: 740px;
     &__recipe-img {
         border-radius: 12px;
-        // margin: 0 0 40px;
-        padding: 40px;
-        width: 100%;
+        margin: 40px 40px 0;
+        img {
+            border-radius: 12px;
+            width: 100%;
+        }
     }
     &__recipe-title {
         @include typography(young-serif-prime);
-        margin: 0 0 24px;
-        padding: 0 40px;
+        margin: 40px 40px 0;
     }
     &__recipe-summary {
         @include typography(outfit-regular);
         color: $stone600;
-        padding: 0 40px;
+        margin: 24px 40px 0;
     }
 }
 
@@ -51,7 +51,7 @@ main {
     background-color: $rose50;
     border-radius: 12px;
     padding: 24px;
-    margin: 32px 40px;
+    margin: 32px 40px 0;
     &__title {
         @include typography(outfit-semibold);
         color: $rose800;
@@ -77,16 +77,22 @@ main {
 }
 
 .section {
+    border-bottom: 1px solid $stone150;
     margin: 0 40px;
+    padding: 0 0 32px;
     &__title {
         @include typography(young-serif-regular);
         color: $brown800;
-        margin: 0 0 24px;
+        margin: 32px 0 24px;
     }
     &__summary {
         @include typography(outfit-regular);
         color: $stone600;
         margin: 0 0 24px;
+    }
+    &:last-child {
+        border-bottom: none;
+        padding: 0 0 40px;
     }
 }
 
@@ -132,7 +138,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 6svh;
+    min-height: 6svh;
     width: 100%;
 }
 

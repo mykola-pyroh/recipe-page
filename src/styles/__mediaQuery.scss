@@ -5,11 +5,38 @@
 }
 
 @media screen and (max-width: 375px) {
+    main {
+        padding: 0;
+    }
+
     .recipe-page {
+        border-radius: 0;
         max-width: 375px;
         &__recipe-img {
+            border-radius: 0;
             position: relative;
             margin: 0;
+            img {
+                border-radius: 0;
+            }
         }
+        &__recipe-title {
+            margin: 40px 32px 0;
+        }
+        &__recipe-summary {
+            margin: 24px 32px 0;
+        }
+    }
+
+    .preparation-section {
+        margin: 32px 32px 0;
+    }
+ 
+    .section {
+        margin: 0 32px;
+    }
+
+    footer {
+        flex-direction: column;
     }
 }
