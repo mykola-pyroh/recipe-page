@@ -1,0 +1,15 @@
+@media screen and (max-width: 768px) {
+    .recipe-page {
+        max-width: 620px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .recipe-page {
+        max-width: 375px;
+        &__recipe-img {
+            position: relative;
+            margin: 0;
+        }
+    }
+}
