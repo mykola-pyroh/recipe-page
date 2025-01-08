@@ -78,6 +78,7 @@ main {
   letter-spacing: 0px;
   font-weight: normal;
   color: #5f574e;
+  padding: 0 0 0 16px;
 }
 .preparetion-list__item::marker {
   color: #7b284f;
@@ -122,7 +123,7 @@ main {
 }
 
 .section-list {
-  margin: 0 0 0 18px;
+  margin: 0 0 10px;
 }
 .section-list__item {
   font-family: "Outfit", sans-serif;
@@ -131,6 +132,8 @@ main {
   letter-spacing: 0px;
   font-weight: normal;
   color: #5f574e;
+  margin: 0 0 8px 24px;
+  padding: 0 0 0 16px;
 }
 .section-list__item span {
   font-family: "Outfit", sans-serif;
